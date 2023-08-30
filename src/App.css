@@ -2,7 +2,7 @@ body{
   width: 100%;
   margin: 0 auto;
 }
-
+/* Navigation */
 li{
   list-style: none;
 }
@@ -16,7 +16,7 @@ nav{
 
 
 .navbar {
-  padding: 10px 13%;
+  padding: 10px 5%;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -37,14 +37,13 @@ nav ul li a:hover{
 
 .menu-icon {
   display: none;
-  cursor: pointer;
 }
 
 .bar {
   width: 25px;
   height: 3px;
   background-color: black;
-  margin: 5px 0;
+  margin: 5px 10px;
 }
 
 .nav-links {
@@ -53,15 +52,101 @@ nav ul li a:hover{
   align-items: center;
 }
 
-.nav-links.visible {
-  flex-direction: column;
+
+/* Hero */
+header{
+  background-color: #495e57;
+  padding: 40px 0;
+}
+
+header section{
+  color: #EDEFEE;
+  padding: 10px 5%;
+  position: relative;
+}
+
+h2{
+  color: #F4CE14;
+  font-size: 40px;
+}
+
+h3 {
+  font-size: 25px;
+}
+
+.banner p{
+  font-size: 20px;
+  max-width: 500px;
+  line-height: 1.5;
+  margin-bottom: 30px;
+}
+button {
+  background-color: #F4CE14;
+  color: black;
+  padding: 14px 18px;
+  border: none;
+  text-decoration: none;
+  border-radius: 12px;
+  font-size: 20px;
+  font-weight: bold;
+  cursor: pointer;
+}
+.banner-img{
   position: absolute;
-  top: 40px;
-  right: 0;
+  right: 5%;
+  top: 15%;
+  width: 400px;
+}
+
+.banner-img img{
   width: 100%;
-  background-color: #495E57;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  transition: all 0.3s ease-in-out;
+  height: 400px;
+  border-radius: 20px;
+}
+
+@media screen and (max-width: 768px){
+  .menu-icon {
+    display: block;
+    cursor: pointer;
+  }
+
+  .nav-links {
+    display: none;
+  }
+
+  .nav-links.visible {
+    position: absolute;
+    top: 40px;
+    right: 0;
+    width: 100%;
+    background-color: #495E57;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: all 1s ease-in-out;
+  }
+
+  .navbar{
+    background:#fff;
+    padding: 10px 5%;
+  }
+
+  nav ul li a{
+    color: #fff;
+  }
+
+  .bar{
+    background: #333333;
+  }
+
+  .banner-img{
+    position: relative;
+    padding: 10px 5%;
+    width:auto;
+    height: auto;
+  }
+  .banner button{
+    position: relative;
+    left: 25%;
+  }
 }
