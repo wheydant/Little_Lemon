@@ -1,12 +1,11 @@
 import { Router, Routes, Route } from 'react-router-dom';
 import './App.css';
-import {Navigation, Hero, Hightlight, Testimonials, About, Footer} from './components';
+import {Navigation, Hero, BookingForm, Hightlight, ConfirmationBooking, Testimonials, About, Footer, Main} from './components';
 function App() {
   return (
       <>
         <Navigation/>
-        <Hero />
-        <Hightlight />
+        <Main />
         <Testimonials />
         <About />
         <Footer />

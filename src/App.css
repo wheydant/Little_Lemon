@@ -104,6 +104,46 @@ button {
   border-radius: 20px;
 }
 
+/*form*/
+.formField{
+  padding: 50px 20px;
+}
+
+input, label{
+  display: inline-block;
+  margin-right: 20px;
+  margin-bottom: 20px;
+}
+#book-date, #book-time, #book-guests, #book-occasion{
+  background: #bdbdbd43;
+  color: #EDEFEE;
+  padding: 8px 24px;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+}
+
+.btnReceive input{
+  background-color: #F4CE14;
+  color: black;
+  padding: 14px 18px;
+  border: none;
+  text-decoration: none;
+  border-radius: 12px;
+  font-size: 15px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.confirm span{
+  color: #F4CE14;
+}
+
+form, .confirm{
+  padding: 10px 13%;
+}
+
+
 @media screen and (max-width: 768px){
   .menu-icon {
     display: block;
@@ -138,7 +178,7 @@ button {
   .bar{
     background: #333333;
   }
-
+  /* Hero */
   .banner-img{
     position: relative;
     padding: 10px 5%;
