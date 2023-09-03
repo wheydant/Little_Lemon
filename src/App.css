@@ -170,8 +170,8 @@ form, .confirm{
 }
 
 .menu-items{
-  width: 500px;
-  height: 600px;
+  width: 350px;
+  height: 650px;
   background: #a9c8be;
   border-radius: 8px;
 }
@@ -200,12 +200,53 @@ form, .confirm{
   max-width: 500px;
   line-height: 1.5;
   margin-bottom: 30px;
-  margin-top: 30px;
+}
+.menu-content .menu-price{
+  margin-top: 25px;
+  font-weight: bold;
 }
 
+
+/* Footer */
+footer section{
+  padding: 10px 5%;
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+}
+
+.company-info img{
+  margin-top: 12px;
+  cursor: pointer;
+  width: 200px;
+}
+
+.company-info p{
+  width: 320px;
+}
+
+footer h3{
+  font-size: 18px;
+}
+
+footer ul{
+  padding: 0;
+}
+
+footer ul li{
+  padding: 8px 0;
+}
+
+
+
+
 @media screen and (max-width: 768px){
+  body{
+    width: 100%;
+    margin: 0 auto;
+  }
   .menu-icon {
-    margin-right: 5px;
+    margin-right: 10px;
     display: block;
     cursor: pointer;
   }
@@ -250,14 +291,26 @@ form, .confirm{
     left: 25%;
   }
   /* Menu */
-  .menu-container{
-    margin: auto;
-    padding: 10px 5%;
+  .header section, .menu-container{
+    padding: 10px 8%;
   }
+  .menu-container{
+    margin: 20px 0;
+  }
+  .menu-header{
+    justify-content: flex-start;
+  }
+
   .menu-items{
-    width: 350px;
-    height: 650px;
-    background: #a9c8be;
-    border-radius: 8px;
+    width: 100%;
+  }
+
+  /* Footer */
+  footer section{
+    padding: 10px 8%;
+    flex-direction: column;
+  }
+  .company-info p{
+    width: 100%;
   }
 }

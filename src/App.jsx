@@ -7,7 +7,6 @@ function App() {
         <Navigation/>
         <Main />
         <Menu />
-        <About />
         <Footer />
       </>
   );
